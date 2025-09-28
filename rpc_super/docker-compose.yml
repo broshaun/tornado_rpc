@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  rpc_super:
+    image: rpc:super
+    container_name: rpc_super
+    build:
+      context: .
+    
+    restart: unless-stopped
+    ports:
+      - "4242:4242"
+    volumes:
+      - ./app:/usr/src/app:ro 
+    working_dir: /usr/src/app
+    command: python3 -u main.py
+    
+    networks:
+      busynet:
+        aliases:
+          - rpc_super.local
+
+networks:
+  busynet:
+    external: true
+    name: busynet 
+
+

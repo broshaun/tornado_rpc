@@ -1,0 +1,7 @@
+wrapt==1.14
+tornado==6.4
+zerorpc==0.6.3
+aiozmq==1.0.0
+redis
+
+
