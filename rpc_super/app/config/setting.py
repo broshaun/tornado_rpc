@@ -4,8 +4,7 @@ from datetime import datetime
 
 
 class TCP:
-    # HOST = "rpc_super.local"
-    HOST = "192.168.64.1"
+    HOST = "rpc_super.local"
     PORT = 4242
     
 

@@ -1,5 +1,5 @@
 from .dbase import BliDB,Session,RPCServer
-from .setting import TCP,Times
+from .setting import TCP
 from utils.helper import new_thread
 import time
 
